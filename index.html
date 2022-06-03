@@ -174,82 +174,10 @@
       
         <h2 id="准备工具："><a href="#准备工具：" class="headerlink" title="准备工具："></a>准备工具：</h2><h3 id="1-Windows-Powershell-7-23"><a href="#1-Windows-Powershell-7-23" class="headerlink" title="1.Windows Powershell 7.23"></a>1.Windows Powershell 7.23</h3><h3 id="2-git版本控制工具"><a href="#2-git版本控制工具" class="headerlink" title="2.  git版本控制工具"></a>2.  <a target="_blank" rel="noopener" href="https://git-scm.com/">git</a>版本控制工具</h3><h3 id="3-npm（没有的就下载node-js）Powershell中用以下命令查看版本"><a href="#3-npm（没有的就下载node-js）Powershell中用以下命令查看版本" class="headerlink" title="3. npm（没有的就下载node.js）Powershell中用以下命令查看版本"></a>3. npm（没有的就下载<a target="_blank" rel="noopener" href="https://nodejs.org/en/">node.js</a>）Powershell中用以下命令查看版本</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v </span><br></pre></td></tr></table></figure>
 
-<h3 id="4-一个-GitHub-账号。（最后要部署到-Github-上）"><a href="#4-一个-GitHub-账号。（最后要部署到-Github-上）" class="headerlink" title="4. 一个 GitHub 账号。（最后要部署到 Github 上）"></a>4. 一个 GitHub 账号。（最后要部署到 Github 上）</h3><p>&lt;! – more –&gt;</p>
-<h2 id="开始搭建："><a href="#开始搭建：" class="headerlink" title="开始搭建："></a>开始搭建：</h2><h3 id="1-下载-cnpm-工具（淘宝的镜像源）"><a href="#1-下载-cnpm-工具（淘宝的镜像源）" class="headerlink" title="1. 下载 cnpm 工具（淘宝的镜像源）"></a>1. 下载 cnpm 工具（淘宝的镜像源）</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-
-<h4 id="查看-cnpm-版本"><a href="#查看-cnpm-版本" class="headerlink" title="查看 cnpm 版本"></a>查看 cnpm 版本</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm -v</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="2-使用-cnpm下载-hexo-cli"><a href="#2-使用-cnpm下载-hexo-cli" class="headerlink" title="2. 使用 cnpm下载 hexo-cli"></a>2. 使用 cnpm下载 hexo-cli</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<h4 id="查看-hexo-版本"><a href="#查看-hexo-版本" class="headerlink" title="查看 hexo 版本"></a>查看 hexo 版本</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
-
-<p>如果出现以下界面，就代表下载成功。</p>
-<img src="https://s2.loli.net/2022/05/11/YmfzU6PhVRJTGAD.png" style="zoom:67%;" />
-
-
-
-<h3 id="3-初始化-hexo"><a href="#3-初始化-hexo" class="headerlink" title="3. 初始化 hexo"></a>3. 初始化 hexo</h3><p>先新建一个文件夹，用来存放你博客的文件，什么名字都行。</p>
-<p>然后在 Powershell 中进入到新建的文件夹。输入：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
-
-<p>即可使 hexo 初始化。</p>
-<p>接着输入</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<p>就可开启 hexo 提供的服务器，默认服务器就是 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a></p>
-<p>Ctrl + c 就可关闭。</p>
-<h3 id="4-第一篇文章"><a href="#4-第一篇文章" class="headerlink" title="4. 第一篇文章"></a>4. 第一篇文章</h3><p>使用以下命令即可创建一篇新的文章。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">&quot;文件名&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>文件默认储存在 博客根目录\source\_posts目录下，为Markdown文件，可以通过 Typora 或 VScode 等Markdown编辑器打开。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure>
-
-<p>hexo clean 用于清理</p>
-<p>hexo g 用于生成</p>
-<p>再次打开服务器，就可看到你新建的文件了。</p>
-<h3 id="5-部署至-Github-上。"><a href="#5-部署至-Github-上。" class="headerlink" title="5. 部署至 Github 上。"></a>5. 部署至 Github 上。</h3><p>当确定本地运行没有问题时，就可以尝试去部署到一个服务器上了。这里用的是 Github 提供的服务器。这也是本人出问题最多的一步。</p>
-<h4 id="1-首先创建一个-Github-的仓库。"><a href="#1-首先创建一个-Github-的仓库。" class="headerlink" title="1.首先创建一个 Github 的仓库。"></a>1.首先创建一个 Github 的仓库。</h4><p><strong>仓库名必须是 YourGithubName.github.io</strong></p>
-<p>比如博主的 Github名是: 334534song。仓库名就应是: 334534song.github.io</p>
-<h4 id="2-下载git部署插件"><a href="#2-下载git部署插件" class="headerlink" title="2. 下载git部署插件"></a>2. 下载git部署插件</h4><p>在你博客的根目录下执行以下命令，下载git部署插件：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="3-配置-config-yml-源文件"><a href="#3-配置-config-yml-源文件" class="headerlink" title="3. 配置 _config.yml 源文件"></a>3. 配置 _config.yml 源文件</h4><p>在根目录的_config.yml中找到 <code>deploy:</code> 并将deploy修改为：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: <span class="string">&quot;git&quot;</span></span><br><span class="line">  repo: <span class="string">&quot;https://github.com/YourGithubname/YourGithubName.github.io.git&quot;</span></span><br><span class="line">  branch: <span class="string">&quot;master&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p> &#x3D;&#x3D; 注意 &#x3D;&#x3D;：每个冒号后要加上一个空格，Windows中有引号不用管。</p>
-<h4 id="4-推送至-GitHub-上（博主出问题最多的一步）"><a href="#4-推送至-GitHub-上（博主出问题最多的一步）" class="headerlink" title="4. 推送至 GitHub 上（博主出问题最多的一步）"></a>4. 推送至 GitHub 上（博主出问题最多的一步）</h4><p>在文章的根目录下执行命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<p>如果你出现了以下现象，恭喜你成功了。</p>
-<p><img src="https://s2.loli.net/2022/05/11/3QFCI7vtEmVhoAM.png"></p>
-<p>接着只需要输入你的仓库名（YourGitHubName.github.io），就可以访问了。（从今往后都可以使用这个IP了。）</p>
-<h5 id="博主出现的问题："><a href="#博主出现的问题：" class="headerlink" title="博主出现的问题："></a>博主出现的问题：</h5><ol>
-<li><p>fatal: unable to access xxxxx OpenSSL SSL_read: Connection was reset</p>
-<p>原因：网站的SSl证书没有经过签署</p>
-<p>解决方案：在项目根目录输入以下命令，解除SSL验证后再次部署。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.sslVerify <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>fatal: unable to access</p>
-<p>原因：git在拉取或者提交项目时，中间会有git的http和https代理，但是我们本地环境本身就有SSL协议了，所以取消git的https代理         即可，不行再取消http的代理。</p>
-<p>解决方案：在项目根目录输入以下命令，取消git的https和http代理。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global --<span class="built_in">unset</span> https.proxy</span><br><span class="line">git config --global --<span class="built_in">unset</span> http.proxy</span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>到这里，部署就彻底完成了。</p>
-<h3 id="6-设置-hexo-主题。"><a href="#6-设置-hexo-主题。" class="headerlink" title="6.设置 hexo 主题。"></a>6.设置 hexo 主题。</h3><p>每个人的喜好都不相同，可以直接到 GitHub 上搜索 <strong>Hexo Theme</strong>，选择你中意的即可。</p>
-<p>这里拿博主使用的 matery 样式举例。</p>
-<p>首先进入样式的 <a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery">GitHub 仓库</a></p>
-<p>然后在项目根目录下执行以下命令，将样式保存到根目录下themes夹中的matery文件夹：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/blinkfox/hexo-theme-matery.git themes/matery</span><br></pre></td></tr></table></figure>
-
-<p>然后在根目录下的_config.yml中找到<code>theme:</code>在后面添上你选择的样式的名字，如 <code>theme: matery</code></p>
-<p>再使用<code>hexo d</code>命令推送至GitHub仓库，就成功替换样式了。</p>
-<p>如果想要自定义主题，可以参考主题中的 README.md 文件，跟着做就可以了。</p>
-<p>至此，hexo个人博客就搭建完了，非常简单，总共也花不了多少时间</p>
-
+<h3 id="4-一个-GitHub-账号。（最后要部署到-Github-上）"><a href="#4-一个-GitHub-账号。（最后要部署到-Github-上）" class="headerlink" title="4. 一个 GitHub 账号。（最后要部署到 Github 上）"></a>4. 一个 GitHub 账号。（最后要部署到 Github 上）</h3>
+        
+          <a class="article-more-a" href="/2022/05/11/win10-hexo-ge-ren-bo-ke-da-jian-guo-cheng/#more">more >></a>
+        
       
 
       

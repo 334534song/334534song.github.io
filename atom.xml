@@ -6,7 +6,7 @@
   <link href="https://334534song.github.io/atom.xml" rel="self"/>
   
   <link href="https://334534song.github.io/"/>
-  <updated>2022-06-03T08:57:51.660Z</updated>
+  <updated>2022-06-03T08:59:52.488Z</updated>
   <id>https://334534song.github.io/</id>
   
   <author>
@@ -21,16 +21,12 @@
     <link href="https://334534song.github.io/2022/05/11/win10-hexo-ge-ren-bo-ke-da-jian-guo-cheng/"/>
     <id>https://334534song.github.io/2022/05/11/win10-hexo-ge-ren-bo-ke-da-jian-guo-cheng/</id>
     <published>2022-05-11T01:14:11.000Z</published>
-    <updated>2022-06-03T08:57:51.660Z</updated>
+    <updated>2022-06-03T08:59:52.488Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;准备工具：&quot;&gt;&lt;a href=&quot;#准备工具：&quot; class=&quot;headerlink&quot; title=&quot;准备工具：&quot;&gt;&lt;/a&gt;准备工具：&lt;/h2&gt;&lt;h3 id=&quot;1-Windows-Powershell-7-23&quot;&gt;&lt;a</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;准备工具：&quot;&gt;&lt;a href=&quot;#准备工具：&quot; class=&quot;headerlink&quot; title=&quot;准备工具：&quot;&gt;&lt;/a&gt;准备工具：&lt;/h2&gt;&lt;h3 id=&quot;1-Windows-Powershell-7-23&quot;&gt;&lt;a href=&quot;#1-Windows-Powershell-7-23&quot; class=&quot;headerlink&quot; title=&quot;1.Windows Powershell 7.23&quot;&gt;&lt;/a&gt;1.Windows Powershell 7.23&lt;/h3&gt;&lt;h3 id=&quot;2-git版本控制工具&quot;&gt;&lt;a href=&quot;#2-git版本控制工具&quot; class=&quot;headerlink&quot; title=&quot;2.  git版本控制工具&quot;&gt;&lt;/a&gt;2.  &lt;a href=&quot;https://git-scm.com/&quot;&gt;git&lt;/a&gt;版本控制工具&lt;/h3&gt;&lt;h3 id=&quot;3-npm（没有的就下载node-js）Powershell中用以下命令查看版本&quot;&gt;&lt;a href=&quot;#3-npm（没有的就下载node-js）Powershell中用以下命令查看版本&quot; class=&quot;headerlink&quot; title=&quot;3. npm（没有的就下载node.js）Powershell中用以下命令查看版本&quot;&gt;&lt;/a&gt;3. npm（没有的就下载&lt;a href=&quot;https://nodejs.org/en/&quot;&gt;node.js&lt;/a&gt;）Powershell中用以下命令查看版本&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm -v &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;4-一个-GitHub-账号。（最后要部署到-Github-上）&quot;&gt;&lt;a href=&quot;#4-一个-GitHub-账号。（最后要部署到-Github-上）&quot; class=&quot;headerlink&quot; title=&quot;4. 一个 GitHub 账号。（最后要部署到 Github 上）&quot;&gt;&lt;/a&gt;4. 一个 GitHub 账号。（最后要部署到 Github 上）&lt;/h3&gt;</summary>
     
     
     
